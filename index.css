@@ -37,6 +37,15 @@ body{
    position: relative;
 }
 
+.Top_Design h3{
+   font-family: 'Heebo', sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   text-align: center;
+   color: #fff;
+   margin: 5px 0 0 0 ;
+}
+
 .Inner_Top_Design{
    width: 92%;
    height: 70px;
@@ -44,7 +53,7 @@ body{
    border-radius: 10px;
    position: absolute;
    left: 50%;
-   top: 75px;
+   top: 35px;
    transform: translateX(-50%);
    padding: 10px 15px;
    display: flex;
@@ -70,7 +79,7 @@ body{
 .Section1 h4 div{
   width: 10px;
   height: 10px;
-  background-color: blue;
+  background-color: #028146;
   border-radius: 50%;
   margin: 5px;
 }
@@ -83,27 +92,23 @@ body{
    margin:  0 0 5px 0;
 }
 
-
-.Top_Design h3{
-   font-family: 'Heebo', sans-serif;
-   font-size: 1rem;
-   font-weight: 600;
-   text-align: center;
-   color: #fff;
-   margin: 30px 0 0 0 ;
-}
-
-
 .Bottom_Design{
    height: 80px;
    display: flex;
-   align-items: center;
-   padding: 0 10px;
+   flex-direction: column;
+   padding: 4px 2px;
+   position: relative;
+   overflow: hidden;
+   transition: all .5s ease-in-out;
+}
+
+.Bottom_Design.Activate{
+   height: 400px;
 }
 
 .Bottom_Image{
-   width: 60px;
-   height: 60px;
+   width: 40px;
+   height: 40px;
    border-radius: 50%;
    border: 3px solid #fff;
 }
@@ -131,6 +136,74 @@ body{
    font-weight: 400;
 }
 
+.Bottom_Icon{
+   position: relative;
+   width: 100%;
+}
+
+.Bottom_Icon svg{
+   color: #fff;
+   width: 20px;
+   position: absolute;
+   right: 5px;
+   top: -4px;
+   cursor: pointer;
+}
+
+.bi-chevron-down{
+   display: none;
+}
+
+.Bottom_MetaInfo{
+   overflow: scroll;
+   padding: 5px 10px;
+   border-radius: 10px;
+   margin: 5px 0 0 0;
+   width:100%;
+}
+
+.Meta_Info_Top{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.MIT_design{
+   font-family: 'Heebo', sans-serif;
+   color: #fff;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+.MIT_design h3{
+   font-size: .9rem;
+   font-weight: 500;
+}
+
+.MIT_design p{
+   font-size: .8rem;
+   font-weight: 400;
+}
+
+.Meta_Info_Bottom{
+   margin: 20px 0 10px 0;
+   padding: 7px 12px;
+   font-family: 'Heebo', sans-serif;
+   color: #fff;
+}
+
+.Meta_Info_Bottom h3{
+   font-size: 1rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.Meta_Info_Bottom p{
+   font-size: .8rem;
+   font-weight: 400;
+   text-align: justify;
+}
 
 @media screen and (min-width:500px) {
    body{
