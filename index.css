@@ -22,6 +22,7 @@ body{
    justify-content: space-between;
    width: 100%;
    height: 100%;
+   position: relative;
 }
 
 .Info_Design{
@@ -98,6 +99,7 @@ body{
    flex-direction: column;
    padding: 4px 2px;
    position: relative;
+   z-index: 4;
    overflow: hidden;
    transition: all .5s ease-in-out;
 }
@@ -106,7 +108,7 @@ body{
    height: 400px;
 }
 
-.Bottom_Image{
+/* .Bottom_Image{
    width: 40px;
    height: 40px;
    border-radius: 50%;
@@ -118,7 +120,7 @@ body{
    height: 100%;
    border-radius: 50%;
    object-fit: contain;
-}
+} */
 
 .Bottom_Details{
    margin: 0 0 0 15px;
@@ -208,6 +210,25 @@ body{
    font-size: .8rem;
    font-weight: 400;
    text-align: justify;
+}
+
+.Side_Icon{
+   position: absolute;
+   bottom: 180px;
+   right: 10px;
+   background-color: #028146;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px;
+   border-radius: 2px;
+   z-index: 2;
+}
+
+.Side_Icon svg{
+   color: #fff;
+   width: 18px;
+   margin: 5px 0;
 }
 
 @media screen and (min-width:500px) {
