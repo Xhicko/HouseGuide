@@ -12,7 +12,6 @@ function toggleExpandState(){
       else{
          expandContainerDown.style.display = 'none'
          expandContainerUp.style.display = 'flex'
-
       }
    })
 
