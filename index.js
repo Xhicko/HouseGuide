@@ -25,7 +25,7 @@ function toggleExpandState(){
 toggleExpandState()
 
 
-const map = document.querySelector('#Content')
+const map = document.querySelector('.Inner_Content_Data')
 const nextIndicator = document.querySelector('.Satelite')
 const returnIndicator = document.querySelector('.Default')
 

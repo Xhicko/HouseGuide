@@ -7,249 +7,251 @@
    box-sizing: border-box;
 }
 
-body{
-   background-image: url("https://img.freepik.com/free-vector/colored-city-map-with-streets-park_23-2148318250.jpg?w=740&t=st=1705770581~exp=1705771181~hmac=e48ccdfe3900cf0aa3eab70052d91754fd971755c8c49a8925b8038277ccd541");
-   background-position: center;
-   background-size: cover;
-   width: 100%;
-   height: 100dvh;
-   background-repeat: no-repeat;
-}
 
+@media (max-width:2000px){
 
-.Content_Wrapper{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 100%;
-   height: 100%;
-   position: relative;
-}
-
-.Not_Supported{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translateX(-30%);
-   width: 100%;
-}
-
-.Info_Design{
-   width: 95%;
-   height: 100px;
-   background-color: #028146;
-   margin: 10px auto;
-   border-radius: 15px;
-}
-
-.Top_Design{
-   height: 120px;
-   position: relative;
-}
-
-.Top_Design h3{
-   font-family: 'Heebo', sans-serif;
-   font-size: 1rem;
-   font-weight: 600;
-   text-align: center;
-   color: #fff;
-   margin: 5px 0 0 0 ;
-}
-
-.Inner_Top_Design{
-   width: 92%;
-   height: 70px;
-   background-color: #fff;
-   border-radius: 10px;
-   position: absolute;
-   left: 50%;
-   top: 35px;
-   transform: translateX(-50%);
-   padding: 10px 15px;
-   display: flex;
-   flex-direction: column;
-}
-
-.Section_design{
-   width:100%;
-   display: flex;
-   justify-content: space-between;
-}
-
-.Section1 h4{
-   font-family: 'Heebo', sans-serif;
-   font-size: .8rem;
-   font-weight: 500;
-   text-align: center;
-   margin:  0 0 5px 0;
-   display: flex;
-   align-items: center;
-}
-
-.Section1 h4 div{
-  width: 10px;
-  height: 10px;
-  background-color: #028146;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-.Section2 h4{
-   font-family: 'Heebo', sans-serif;
-   font-size: .8rem;
-   font-weight: 400;
-   text-align: center;
-   margin:  0 0 5px 0;
-}
-
-.Bottom_Design{
-   height: 80px;
-   display: flex;
-   flex-direction: column;
-   padding: 2px 2px;
-   position: relative;
-   z-index: 4;
-   transition: all .5s ease-in-out;
-}
-
-.Bottom_Design.Activate{
-   height: 400px;
-}
-
-.Bottom_Details{
-   margin: 0 0 0 15px;
-   font-family: 'Heebo', sans-serif;
-   color: #fff;
-}
-
-.Bottom_Details h3{
-   font-size: .9rem;
-   font-weight: 500;
-}
-
-.Bottom_Details p{
-   font-size: .8rem;
-   font-weight: 400;
-}
-
-.Bottom_Icon{
-   position: relative;
-   top: 0;
-   width: 100%;
-   margin: 3px 0 0 0;
-   z-index: 10;
-}
-
-.Bottom_Icon svg{
-   background-color: #fff;
-   padding: 5px;
-   color: #028146;
-   width: 20px;
-   cursor: pointer;
-   position: absolute;
-   left: 50%;
-   top: -15px;
-   transform: translateX(-50%);
-   border-radius: 50%;
-   box-shadow: 1px 1px #000;
-}
-
-.bi-chevron-down{
-   display: none;
-}
-
-.Bottom_Wrapper{
-   overflow: scroll;
-   padding: 5px 10px;
-}
-
-.Bottom_MetaInfo{
-   border-radius: 10px;
-   width:100%;
-   overflow: hidden;
-}
-
-.Meta_Info_Top{
-   display: flex;
-   justify-content: space-between;
-   width: 100%;
-}
-
-.MIT_design{
-   font-family: 'Heebo', sans-serif;
-   color: #fff;
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-}
-
-.MIT_design h3{
-   font-size: .9rem;
-   font-weight: 500;
-}
-
-.MIT_design p{
-   font-size: .8rem;
-   font-weight: 400;
-}
-
-.Meta_Info_Bottom{
-   margin: 20px 0 10px 0;
-   padding: 7px 12px;
-   font-family: 'Heebo', sans-serif;
-   color: #fff;
-}
-
-.Meta_Info_Bottom h3{
-   font-size: 1rem;
-   text-transform: uppercase;
-   text-align: center;
-}
-
-.Meta_Info_Bottom p{
-   font-size: .8rem;
-   font-weight: 400;
-   text-align: justify;
-}
-
-.Map_Switcher_Indicator{
-   position: absolute;
-   bottom: 120px;
-   right: 10px;
-   width: 70px;
-   height: 70px;
-   border-radius: 5px;
-   border: 3px solid #fff;
-   z-index: 3;
-}
-
-.Map_Switcher_Indicator > img{
-   display: flex;
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-   border-radius: 2.5px;
-}
-
-.Map_Switcher_Indicator > img:nth-last-child(1){
-  display: none;
-}
-
-
-
-@media screen and (min-width:500px) {
-   body{
-       display: none;
-       background-image: none;
-   }
    .Not_Supported{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+   }
+
+   .Not_Supported p{
+      font-family: 'Heebo', sans-serif;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 1rem;
+   }
+
+   .Inner_Content_Data{
       display: none;
    }
-
 }
 
 @media screen and (max-width:500px) {
- 
+   
+   .Content_Wrapper{
+      width: 100%;
+      height: 100dvh; 
+   }
+   
+  
+   .Inner_Content_Data{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-image: url("https://img.freepik.com/free-vector/colored-city-map-with-streets-park_23-2148318250.jpg?w=740&t=st=1705770581~exp=1705771181~hmac=e48ccdfe3900cf0aa3eab70052d91754fd971755c8c49a8925b8038277ccd541");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   
+   .Info_Design{
+      width: 95%;
+      height: 100px;
+      background-color: #028146;
+      margin: 10px auto;
+      border-radius: 15px;
+   }
+   
+   .Top_Design{
+      height: 120px;
+      position: relative;
+   }
+   
+   .Top_Design h3{
+      font-family: 'Heebo', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+      margin: 5px 0 0 0 ;
+   }
+   
+   .Inner_Top_Design{
+      width: 92%;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      top: 35px;
+      transform: translateX(-50%);
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .Section_design{
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   
+   .Section1 h4{
+      font-family: 'Heebo', sans-serif;
+      font-size: .8rem;
+      font-weight: 500;
+      text-align: center;
+      margin:  0 0 5px 0;
+      display: flex;
+      align-items: center;
+   }
+   
+   .Section1 h4 div{
+     width: 10px;
+     height: 10px;
+     background-color: #028146;
+     border-radius: 50%;
+     margin: 5px;
+   }
+   
+   .Section2 h4{
+      font-family: 'Heebo', sans-serif;
+      font-size: .8rem;
+      font-weight: 400;
+      text-align: center;
+      margin:  0 0 5px 0;
+   }
+   
+   .Bottom_Design{
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      padding: 2px 2px;
+      position: relative;
+      z-index: 4;
+      transition: all .5s ease-in-out;
+   }
+   
+   .Bottom_Design.Activate{
+      height: 380px;
+   }
+   
+   .Bottom_Details{
+      margin: 0 0 0 15px;
+      font-family: 'Heebo', sans-serif;
+      color: #fff;
+   }
+   
+   .Bottom_Details h3{
+      font-size: .9rem;
+      font-weight: 500;
+   }
+   
+   .Bottom_Details p{
+      font-size: .8rem;
+      font-weight: 400;
+   }
+   
+   .Bottom_Icon{
+      position: relative;
+      top: 0;
+      width: 100%;
+      margin: 3px 0 0 0;
+      z-index: 10;
+   }
+   
+   .Bottom_Icon svg{
+      background-color: #fff;
+      padding: 5px;
+      color: #028146;
+      width: 20px;
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      top: -15px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      box-shadow: 1px 1px #000;
+   }
+   
+   .bi-chevron-down{
+      display: none;
+   }
+   
+   .Bottom_Wrapper{
+      overflow: scroll;
+      padding: 5px 10px;
+   }
+   
+   .Bottom_MetaInfo{
+      border-radius: 10px;
+      width:100%;
+      overflow: hidden;
+   }
+   
+   .Meta_Info_Top{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   
+   .MIT_design{
+      font-family: 'Heebo', sans-serif;
+      color: #fff;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .MIT_design h3{
+      font-size: .9rem;
+      font-weight: 500;
+   }
+   
+   .MIT_design p{
+      font-size: .8rem;
+      font-weight: 400;
+   }
+   
+   .Meta_Info_Bottom{
+      margin: 20px 0 10px 0;
+      padding: 7px 12px;
+      font-family: 'Heebo', sans-serif;
+      color: #fff;
+   }
+   
+   .Meta_Info_Bottom h3{
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   
+   .Meta_Info_Bottom p{
+      font-size: .8rem;
+      font-weight: 400;
+      text-align: justify;
+   }
+   
+   .Map_Switcher_Indicator{
+      position: absolute;
+      bottom: 120px;
+      right: 10px;
+      width: 70px;
+      height: 70px;
+      border-radius: 5px;
+      border: 3px solid #fff;
+      z-index: 3;
+   }
+   
+   .Map_Switcher_Indicator > img{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 2.5px;
+   }
+   
+   .Map_Switcher_Indicator > img:nth-last-child(1){
+     display: none;
+   }
+
    .Not_Supported{
       display: none;
    }
