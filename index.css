@@ -152,19 +152,30 @@
    
    .Bottom_Wrapper{
       overflow: scroll;
-      padding: 5px 10px;
+      padding: 5px 0;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
    }
    
+   .Bottom_Wrapper::-webkit-scrollbar {
+      width: 1px; /* Adjust the width as needed */
+    }
+   
+
+   .Bottom_Wrapper::-webkit-scrollbar-thumb {
+      background-color: transparent; 
+   }
+
    .Bottom_MetaInfo{
       border-radius: 10px;
       width:100%;
-      overflow: hidden;
    }
    
    .Meta_Info_Top{
       display: flex;
       justify-content: space-between;
       width: 100%;
+      padding: 0 10px;
    }
    
    .MIT_design{
