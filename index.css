@@ -7,38 +7,19 @@
    box-sizing: border-box;
 }
 
-
-@media (max-width:2000px){
-
-   .Not_Supported{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-   }
-
-   .Not_Supported p{
-      font-family: 'Heebo', sans-serif;
-      text-transform: capitalize;
-      font-weight: 500;
-      font-size: 1rem;
-   }
-
-   .Inner_Content_Data{
-      display: none;
-   }
+.Content_Wrapper{
+   background-color: #0281461a;
 }
 
-@media screen and (max-width:500px) {
-    
    .Inner_Content_Data{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin: 0 auto;
       width: 100%;
+      max-width: 400px;
+      position: relative;
       height: 100dvh; 
-      position: fixed;
       background-image: url("https://img.freepik.com/free-vector/colored-city-map-with-streets-park_23-2148318250.jpg?w=740&t=st=1705770581~exp=1705771181~hmac=e48ccdfe3900cf0aa3eab70052d91754fd971755c8c49a8925b8038277ccd541");
       background-position: center;
       background-size: cover;
@@ -249,5 +230,3 @@
    .Not_Supported{
       display: none;
    }
-
-}
